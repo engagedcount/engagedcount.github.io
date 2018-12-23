@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html, form {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #555;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+#content {
+  padding: 30px;
+}
+
+button {
+  border: 1px solid transparent;
+  font-size: 24px;
+  border-radius: 10px;
+  color: white;
+  background-color: hsl(0, 100%, 71%);
+  padding: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(354, 50%, 54%);
+}
+
+button:active {
+  background-color: hsl(0, 100%, 81%);
+}
+
+button.small {
+  padding: 5px;
+  font-size: 14px;
+}
+
+button.medium {
+  padding: 12px;
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-size: 24px;
+  width: 600px;
+  padding: 15px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+
+}
+
+:focus {
+  outline-color: #4ECDC4;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.logo .start {
+  color: hsl(211,14%,39%);
+}
+
+.logo .end {
+  color: #C44D58;
+}
+
+.logo .logo-wrap {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 100px;
+}
+
+.logo img {
+  width: 75px;
+  position: absolute;
+  left: 1px;
+  top: 48px;
+}
+
+.sub-title {
+  font-weight: normal;
+}
+
+
+.simple-submit {
+  text-align: center
+}
+
+nav {
+  background-color: hsl(211,14%,39%);
+  font-size: 14px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a.login {
+  float: right;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+nav a:active {
+  color: white;
+}
+
+#plans {
+  text-align: center;
+}
+
+.plan {
+  vertical-align: top;
+  display: inline-block;
+  width: 350px;
+  margin: 20px;
+  position: relative;
+}
+
+.plan .best-deal-top {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 140px;
+  height: 140px;
+  border: 70px solid transparent;
+  border-bottom-color: hsl(176,56%,55%);
+  text-transform: uppercase;
+  transform: rotate(45deg) ;
+}
+
+.plan .best-deal-top:before {
+  content: " ";
+  position: absolute;
+  border: 7px solid transparent;
+  border-top-color: hsl(176,56%,25%);
+  bottom: -84px;
+  left: -70px;
+}
+
+.plan .best-deal-top:after {
+  content: " ";
+  position: absolute;
+  border: 7px solid transparent;
+  border-top-color: hsl(176,56%,25%);
+  bottom: -84px;
+  right: -70px;
+}
+
+.plan .best-deal-top div {
+  position: absolute;
+  line-height: 1.5;
+  bottom: -62px;
+  left: -30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.plan h3 {
+  padding: 10px;
+  margin: 0;
+  border: 1px solid hsl(211,14%,39%);
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(211,14%,39%);
+  color: white;
+}
+
+.plan .price {
+  padding: 20px;
+  font-size: 36px;
+}
+
+.plan .core {
+  border-left: 1px solid hsl(211,14%,39%);
+  border-right: 1px solid hsl(211,14%,39%);
+}
+
+.plan .feature {
+  padding: 10px;
+  border-top: 1px solid hsl(211,14%,89%);
+}
+
+.plan .cta {
+  border-top: 1px solid hsl(211,14%,89%);
+  border-left: 1px solid hsl(211,14%,39%);
+  border-right: 1px solid hsl(211,14%,39%);
+  border-bottom: 1px solid hsl(211,14%,39%);
+  border-radius: 0 0 10px 10px;
+  padding: 15px;
+}
+
+.plan .cta .stripe-button-el {
+  background-color: hsl(0, 100%, 71%);
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  background-image: none;
+}
+
+.plan .cta .stripe-button-el span {
+  background-image: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  box-shadow: none;
+  line-height: 1;
+  display: inline !important;
+}
+
+.plan .cta .stripe-button-el:hover {
+  background-color: hsl(354, 50%, 54%);
+}
+
+.plan .cta .stripe-button-el:active {
+  background-color: hsl(0, 100%, 81%);
+}
+
+.postscript {
+  text-align: center;
+  font-size: 14px;
+}
+.postscript .free {
+  font-size: 10px;
+}
+
+footer {
+  text-align: right;
+  margin: 20px;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+}
+
+dt:after {
+  content: ":";
+}
+
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5em 0;
+}
+
+.endpoint table {
+  border-collapse: collapse;
+}
+
+.endpoint table, .endpoint th, .endpoint td{
+  border: 1px solid black;
+}
+
+.endpoint th, .endpoint td {
+  padding: 10px;
+}
+
+#invoices table {
+  border-collapse: collapse;
+}
+
+#invoices table, #invoices th, #invoices td{
+  border: 1px solid black;
+}
+
+#invoices th, #invoices td {
+  padding: 10px;
+}
+
+#main {
+  padding: 30px;
+}
+
+.account-home form {
+  display: inline-block;
+}
+
+.account-home #main section {
+  margin-top: 100px;
+}
+
+
+.account-home #main h2 {
+  text-align: left;
+}
+
+.account-home #allowed-section button {
+  vertical-align: top;
+}
+
+.btn-warn {
+  background-color: #C44D58;
+}
+.btn-warn:hover {
+  background-color: hsl(0, 100%, 71%);
+}
+
+.btn-blue {
+  background-color: #4ECDC4;
+}
+
+.btn-blue:hover {
+  background-color: hsl(211,14%,39%);
+}
+
+
+.btn-small {
+  padding: 12px;
+  font-size: 16px;
+}
+
+#message.error {
+  color: #C44D58;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#response pre {
+  margin: 100px;
+}
